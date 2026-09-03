@@ -1,0 +1,17 @@
+:root { color-scheme: dark; --bg: #120d1c; --card: rgba(28, 24, 38, .88); --ink: #f6f3fb; --muted: #c7c0d0; --accent: #ff9c39; --line: rgba(255,255,255,.14); }
+* { box-sizing: border-box; }
+body { margin: 0; min-height: 100vh; font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", sans-serif; color: var(--ink); background: radial-gradient(circle at 82% 0%, #8a3857 0, transparent 34rem), linear-gradient(160deg,#130d21,#16101c 52%,#2c161b); }
+a { color: #ffc16a; } a:hover { color: #ffe0ad; }
+.shell { width: min(760px, calc(100% - 32px)); margin: 0 auto; padding: 26px 0 48px; }
+header { display:flex; justify-content:space-between; align-items:center; gap:18px; padding: 0 0 26px; }
+.brand { color:var(--ink); text-decoration:none; font-weight:800; font-size:1.18rem; letter-spacing:-.02em; }
+nav { display:flex; align-items:center; gap:14px; flex-wrap:wrap; justify-content:flex-end; } nav a { font-weight:650; text-decoration:none; }
+article { background:var(--card); backdrop-filter:blur(18px); border:1px solid var(--line); border-radius:28px; padding:clamp(24px, 6vw, 48px); box-shadow:0 18px 54px rgba(0,0,0,.3); }
+.eyebrow { color:var(--accent); font-weight:750; letter-spacing:.08em; text-transform:uppercase; font-size:.75rem; margin:0 0 11px; }
+h1 { font-size:clamp(2rem, 7vw, 3.5rem); letter-spacing:-.055em; line-height:1.02; margin:0 0 14px; }
+h2 { font-size:1.27rem; margin:34px 0 12px; letter-spacing:-.02em; } h3 { font-size:1.03rem; margin:25px 0 7px; }
+p,li { color:var(--muted); font-size:1rem; line-height:1.62; } p { margin:0 0 16px; } ul { padding-left:21px; margin:0 0 16px; }
+.button { display:inline-block; background:linear-gradient(135deg,#ffad4d,#ff8246); color:#28180f; padding:12px 17px; border-radius:13px; font-weight:800; text-decoration:none; margin:2px 0 12px; }
+.meta { font-size:.9rem; color:#aaa1b4; }
+footer { color:#a79eae; font-size:.88rem; text-align:center; padding:24px 10px 0; } footer a { margin:0 7px; }
+@media (max-width:520px) { .shell { width:min(100% - 24px,760px); padding-top:18px; } header { align-items:flex-start; flex-direction:column; gap:12px; } nav { justify-content:flex-start; } article { border-radius:22px; } }
